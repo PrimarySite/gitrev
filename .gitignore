@@ -1,0 +1,12 @@
+.DS_Store
+*.pyc
+*.log
+*.log.*
+*.bak
+*~
+
+pip-log.txt
+*.tmproj
+*.dot
+*.db
+/bin/
