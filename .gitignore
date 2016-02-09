@@ -1,5 +1,6 @@
 .DS_Store
 *.pyc
+.*.swp
 *.log
 *.log.*
 *.bak
@@ -10,3 +11,6 @@ pip-log.txt
 *.dot
 *.db
 /bin/
+/include/
+/lib/
+/local/
