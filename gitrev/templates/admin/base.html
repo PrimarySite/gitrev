@@ -80,9 +80,9 @@
     </div>
     <!-- END Content -->
 
-    {% block footer %}<div id="footer" style="padding: 20px 40px;">
+    {% block footer %}<div id="footer" style="padding: 20px 40px; border-top: 1px solid #eee;">
     {% if request.user.is_staff %}
-    <p style="color:#999; font-size: 0.8rem;">{% gitversion %}</p>
+    <p style="font-size: 0.8rem;">{% gitversion %}</p>
     {% endif %}
     </div>{% endblock %}
 </div>
