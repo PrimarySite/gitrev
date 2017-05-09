@@ -10,7 +10,6 @@ register = template.Library()
 
 @register.simple_tag
 def gitversion():
-    print('foooo')
     if not gitversion.version:
         gitversion.version = get_git_revision_string()
     return gitversion.version
