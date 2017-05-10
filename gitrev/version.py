@@ -5,7 +5,7 @@ import subprocess
 logger = logging.getLogger(__name__)
 
 
-GIT_CMD = 'git describe --always --dirty'
+GIT_CMD = 'git describe --always --tags --long --dirty'
 
 
 def test_tokenize_command():
@@ -13,6 +13,8 @@ def test_tokenize_command():
         'git',
         'describe',
         '--always',
+        '--tags',
+        '--long',
         '--dirty'
         ]
     assert tokenize_command(GIT_CMD) == expected
