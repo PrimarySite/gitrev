@@ -49,18 +49,18 @@ def get_git_revision():
     return parts
 
 
-@register.simple_tag
-def git_revision():  # noqa: D103
-    try:
-        command = get_command()
-    except ImproperlyConfigured:
-        logger.exception("Unable to get command to execute.")
-        return ""
-
-    try:
-        result = get_git_revision_string(command)
-    except Exception:
-        logger.exception("Unable to get_git_revision_string.")
-        return ""
-
-    return result
+# @register.simple_tag
+# def git_revision():  # noqa: D103
+#     try:
+#         command = get_command()
+#     except ImproperlyConfigured:
+#         logger.exception("Unable to get command to execute.")
+#         return ""
+# 
+#     try:
+#         result = get_git_revision_string(command)
+#     except Exception:
+#         logger.exception("Unable to get_git_revision_string.")
+#         return ""
+# 
+#     return result
